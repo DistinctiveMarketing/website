@@ -1,0 +1,19 @@
+/**
+ * Site header
+ */
+.masthead {
+
+    min-height: 56px;
+    position: relative;
+
+	&__inner {
+		margin: $spacing-unit * 2.5 auto $spacing-unit / 2 auto;
+        width: 58%;
+        width: calc(58% - (#{$spacing-unit} / 2));
+        @include mq($until: tablet) {
+            width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+            width: calc(100% - (#{$spacing-unit} / 2));
+        }
+	}
+
+}

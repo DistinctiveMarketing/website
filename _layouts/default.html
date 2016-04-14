@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+	{% include featured.html %}
+
+	{% include address.html %}
+
+	{% include footer.html %}
+
+	{% include contact.html %}
+
+	{% include cookie-policy.html %}
+
+	{% include privacy.html %}
+
+	{% include terms.html %}
+
+    <!--[if lt IE 9]>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="{{ 'js/jquery.min.js' | prepend: site.baseurl }}">\x3C/script>')</script>
+    <!--<![endif]-->
+
+	<script src="{{ 'js/site.js' | prepend: site.baseurl }}"></script>
+
+	{% include script-google.html %}
+
+	{% include script-zopim.html %}
+
+	{% include banner-eucookie.html %}
+
+	<script>
+		$zopim(function() {
+			$zopim.livechat.cookieLaw.comply();
+			$zopim.livechat.theme.setColor('#39a9cb');
+			$zopim.livechat.button.setPositionMobile('br');
+			$zopim.livechat.button.setOffsetVerticalMobile(10);
+			$zopim.livechat.button.setOffsetHorizontalMobile(5);
+			$zopim.livechat.theme.reload();
+		});
+	</script>
+
+  </body>
+
+</html>

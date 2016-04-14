@@ -1,0 +1,154 @@
+.footer {
+
+    padding: $spacing-unit 0;
+
+	&__heading {
+		font-size: 18px;
+		margin-bottom: $spacing-unit / 2;
+	}
+
+	&__inner {
+		color: $text-colour;
+		margin-left: -$spacing-unit / 2;
+		@extend %clearfix;
+	}
+
+	&__inner--table {
+		display: table;
+		margin-top: 0;
+		margin-right: auto;
+		margin-bottom: $spacing-unit;
+		@include mq($from: tablet) {
+		    margin-bottom: $spacing-unit * 2;
+		}
+		@include mq($from: desktop) {
+		    margin-bottom: $spacing-unit * 4;
+		}
+		margin-left: auto;
+	}
+
+	&__col {
+		float: left;
+		margin-bottom: $spacing-unit / 2;
+		padding-left: $spacing-unit / 2;
+		@extend %column-third;
+	}
+
+	&__col--last {
+		float: right;
+	}
+
+	&__sub {
+
+	    margin-top: $spacing-unit * 2;
+	    @include mq($from: tablet) {
+	        margin-top: $spacing-unit / 3;
+	    }
+		text-align: center;
+	}
+
+	&__social-media {
+
+		a {
+			color: $brand-secondary;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		& > li {
+			display: inline-block;
+			padding-top: $spacing-unit / 10;
+			padding-right: $spacing-unit / 10;
+			padding-bottom: $spacing-unit;
+			padding-left: $spacing-unit / 10;
+			text-align: center;
+			@include mq($from: tablet) {
+				padding-top: $spacing-unit / 2;
+				padding-right: $spacing-unit / 2;
+				padding-bottom: $spacing-unit * 2;
+				padding-left: $spacing-unit / 2;
+			}
+			@include mq($from: desktop) {
+				padding-top: $spacing-unit;
+				padding-right: $spacing-unit;
+				padding-bottom: $spacing-unit * 2;
+				padding-left: $spacing-unit;
+			}
+		}
+
+		.icon {
+			background-color: $brand-secondary;
+			border-radius: 3px;
+			color: White;
+			margin: 0 auto;
+			padding: 12px;
+			transition: background-color 400ms ease;
+			vertical-align: middle;
+		}
+
+		.label {
+		    display: none;
+			@include mq($from: tablet) {
+			    display: block;
+			}
+			margin: 0 auto;
+			padding-top: 12px;
+			text-align: center;
+			transition: color 400ms ease;
+		}
+
+		a:hover .icon {
+			background-color: darken($text-colour,8%);
+		}
+
+		a:hover .label {
+			color: darken($text-colour,8%);
+		}
+
+	}
+
+	&__docs {
+        border-top: 1px solid $brand-secondary;
+	    margin: 10px auto;
+	    text-align: center;
+	    width: 100%;
+	    @include mq($from: tablet) {
+	        width: 86%;
+        }
+		a {
+			color: $text-colour;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		& > li {
+			display: block;
+			padding-top: $spacing-unit / 2;
+			padding-right: $spacing-unit / 10;
+			padding-bottom: $spacing-unit / 3;
+			padding-left: $spacing-unit / 10;
+			text-align: center;
+			text-transform: uppercase;
+			@include mq($from: tablet) {
+			    display: inline-block;
+				padding-top: $spacing-unit / 2;
+				padding-right: $spacing-unit;
+				padding-bottom: $spacing-unit / 4;
+				padding-left: $spacing-unit;
+			}
+			@include mq($from: desktop) {
+				padding-top: $spacing-unit / 2;
+				padding-right: $spacing-unit * 2;
+				padding-bottom: $spacing-unit / 4;
+				padding-left: $spacing-unit * 2;
+			}
+		}
+
+	}
+
+}
+

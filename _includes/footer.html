@@ -1,0 +1,87 @@
+{% capture sharing_url %}{{ site.url | cgi_escape }}{% endcapture %}
+
+<footer class="footer">
+
+  <div class="wrapper">
+
+    <div class="footer__inner footer__inner--table">
+
+        <ul class="footer__social-media">
+
+          {% if site.facebook_username %}
+          <li>
+            <a href="https://www.facebook.com/{{ site.facebook_username }}">
+                <span class="icon icon-facebook"></span>
+                <span class="label">Facebook</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+                <span class="icon icon-twitter"></span>
+                <span class="label">Twitter</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.google_username %}
+          <li>
+            <a href="https://google.com/+{{ site.google_username }}">
+                <span class="icon icon-google-plus"></span>
+                <span class="label">Google+</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.linkedin_username %}
+          <li>
+            <a href="http://www.linkedin.com/company/{{ site.linkedin_username }}">
+                <span class="icon icon-linkedin2"></span>
+                <span class="label">LinkedIn</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.blogger_username %}
+          <li>
+            <a href="https://blogger.com/{{ site.blogger_username }}">
+                <span class="icon icon-blogger"></span>
+                <span class="label">Blogger</span>
+            </a>
+          </li>
+          {% endif %}
+          
+        {% if site.blog_url %}
+            <li>
+            <a href="{{ site.blog_url }}">
+                <span class="icon icon-blogger"></span>
+                <span class="label">Blog</span>
+            </a>
+          </li>
+          {% endif %}
+
+        </ul>
+
+    </div>
+
+    <div class="footer__sub">
+
+        <ul class="footer__docs">
+            <li><a href="#" data-toggle="modal" data-target="#cookiePolicy">Cookie policy</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#privacyPolicy">Privacy policy</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#terms">Terms and Conditions</a></li>
+        </ul>
+
+        <p class="pica impressum">
+            Distinctive Marketing, Distinctive Contracting and Distinctive Consulting are trading names of DS Marketing & Contracting Ltd. 
+            <br/>
+            Registered office: 5a Frascati Way, Maidenhead Berkshire, SL6 4UY, UK. Registered in England and Wales: 8657384
+        </p>
+
+    </div>
+
+  </div>
+
+</footer>

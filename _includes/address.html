@@ -1,0 +1,46 @@
+{% capture ema %}{{ site.email }}{% endcapture %}
+
+<div class="address">
+
+  <div class="wrapper">
+
+    <div class="address__inner">
+
+      <aside class="address__col">
+
+		<div class="address__heading">
+			<h3 class="double-pica">Get in touch</h3>
+		</div>
+
+		<ul class="address__items great-primer">
+			<li>
+				<button data-toggle="modal" data-target="#contact">Contact us</button>
+			</li>
+			<li>
+				<a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a>
+			</li>
+			<li>
+				<a href="tel:{{ site.phone_main }}">{{ site.phone_main }}</a>
+			</li>
+			<li>        
+                <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                <div id="SkypeButton_Call_distinctive-marketing_1">
+                    <script type="text/javascript">
+                        Skype.ui({
+                            "name": "call",
+                            "element": "SkypeButton_Call_distinctive-marketing_1",
+                            "participants": ["distinctive-marketing"],
+                            "imageSize":32
+                        });
+                    </script>
+                </div>
+            </li>
+		</ul>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</div>

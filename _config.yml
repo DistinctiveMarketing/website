@@ -1,0 +1,37 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+
+title: Distinctive Marketing
+summary: Distinctive Marketing, Consulting, Contracting
+email: info@distinctive.marketing
+phone_main:  "+44 (0) 203 7003241"
+# email: dan@ds-marketing.co.uk
+description: > # this means to ignore newlines until "baseurl:"
+ Distinctive Marketing, Distinctive Contracting and Distinctive Consulting are trading names of DS Marketing & Contracting Ltd
+
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://distinctive.marketing" # the base hostname & protocol for your site
+
+src: DS Marketing & Contracting Ltd
+skype_username: danieljselby
+facebook_username: DistinctiveMarketing
+twitter_username: DistinctiveMktg
+google_username: DistinctiveMarketing
+linkedin_username: distinctive-marketing
+instagram_username: distinctive.marketing
+pinterest_username: distinctivemktg
+youtube_username: DistinctiveMarketing
+blogger_username:
+blog_url: http://blog.distinctive.marketing/
+hashtags: marketing,consulting,contracting
+google_ua: UA-71973220-1
+
+# Build settings
+markdown: kramdown
+exclude: ["_bower_components", "bower.json", "modernizr-config.json"]

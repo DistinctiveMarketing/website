@@ -1,0 +1,34 @@
+{
+  "name": "dm",
+  "authors": [
+    "Dan Selby <dan@distinctive.marketing>"
+  ],
+  "homepage": "https://github.com/DistinctiveUK/distinctive.marketing",
+  "description": "distinctive-marketing",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "js-cookie": "~2.1.0",
+    "sass-mq": "~3.2.5",
+    "modular-scale": "~2.1.1",
+    "jquery": "~2.2.0",
+    "modernizr": "~3.3.1"
+  },
+  "overrides": {
+	  "modernizr": {
+		"main": "modernizr.js"
+	  }
+	}
+}

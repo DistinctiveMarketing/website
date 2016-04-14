@@ -1,0 +1,32 @@
+.featured {
+
+    padding: $spacing-unit 0;
+
+	&__heading {
+		margin-bottom: $spacing-unit / 3;
+		text-transform: uppercase;
+	}
+
+	&__inner {
+		@extend %clearfix;
+		color: $text-colour;
+		margin-left: -$spacing-unit / 2;
+	}
+
+	&__col {
+		@extend %column-third;
+		float: left;
+		margin-bottom: $spacing-unit / 2;
+		padding-left: $spacing-unit / 2;
+		text-align: center;
+	}
+
+	&__col--last {
+		float: right;
+	}
+
+}
+
+
+
+

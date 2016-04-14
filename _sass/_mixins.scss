@@ -1,0 +1,62 @@
+%column-third {
+    margin: $spacing-unit / 2 auto $spacing-unit / 2 auto;
+    width: 31.5%;
+    width: -webkit-calc(33.333% - (#{$spacing-unit} / 2));
+    width: calc(33.333% - (#{$spacing-unit} / 2));
+    @include mq($until: tablet) {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width: calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+%column-half {
+    margin: $spacing-unit / 2 auto $spacing-unit / 2 auto;
+    width: 49%;
+    width: calc(49% - (#{$spacing-unit} / 2));
+    @include mq($until: tablet) {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width: calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+          box-shadow: $shadow;
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y); // IE9 only
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+          transform: translate3d($x, $y, $z);
+}
+
+@mixin transition-transform($transition...) {
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
+}
