@@ -44,6 +44,7 @@ var DM = DM || {};
     function fInit() {
         _showChooser();
         _bindEvents();
+        _hideAfterDelay();
     }
 
     DM.EUCookieChoice = {
