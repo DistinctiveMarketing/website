@@ -7,13 +7,13 @@
 
 # Site settings
 
-title: Distinctive Marketing
+title: Distinctive Marketing - Contracting, Consulting & Marketing
 summary: Distinctive Marketing, Consulting, Contracting
 email: info@distinctive.marketing
 phone_main:  "+44 (0) 203 7003241"
 # email: dan@ds-marketing.co.uk
 description: > # this means to ignore newlines until "baseurl:"
- Distinctive Marketing, Distinctive Contracting and Distinctive Consulting are trading names of DS Marketing & Contracting Ltd
+ We are an <b>independent strategic marketing agency</b> providing full <b>marketing services</b> including <b>CONSULTING, CONTRACTING & MARKETING</b>. Contact us to help you!
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://distinctive.marketing" # the base hostname & protocol for your site
